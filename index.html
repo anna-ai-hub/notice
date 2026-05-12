@@ -2,205 +2,281 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>애나 에이아이 (Anna AI) 영어학원 안내</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>애나 에이아이 Anna AI 영어학원 안내</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", sans-serif;
-      background: #f5f6fa;
+      background: #f3f4f6;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif;
       color: #222;
       line-height: 1.8;
     }
-    .page {
-      max-width: 860px;
+
+    .container {
+      max-width: 900px;
       margin: 0 auto;
-      background: #fff;
+      background: white;
       min-height: 100vh;
-      padding-bottom: 60px;
+      padding-bottom: 80px;
     }
-    .hero {
-      padding: 52px 24px 36px;
+
+    .header {
+      padding: 60px 24px 40px;
       text-align: center;
-      background: linear-gradient(135deg, #eef2ff, #ffffff);
       border-bottom: 1px solid #e5e7eb;
     }
-    .label {
-      display: inline-block;
-      padding: 6px 14px;
-      border-radius: 999px;
-      background: #e0e7ff;
-      color: #3730a3;
-      font-size: 14px;
-      font-weight: 700;
-      margin-bottom: 16px;
-    }
-    h1 {
+
+    .header h1 {
       margin: 0;
-      font-size: clamp(30px, 6vw, 46px);
-      line-height: 1.25;
-      color: #111827;
+      font-size: 42px;
+      line-height: 1.4;
     }
-    .subtitle {
-      max-width: 640px;
-      margin: 18px auto 0;
+
+    .header p {
+      margin-top: 18px;
       font-size: 18px;
-      color: #4b5563;
+      color: #555;
     }
-    article {
-      padding: 34px 24px 0;
+
+    .section {
+      padding: 40px 24px;
+      border-bottom: 1px solid #f1f1f1;
     }
-    section {
-      margin-bottom: 44px;
-    }
-    h2 {
-      font-size: 25px;
-      margin-bottom: 16px;
+
+    .question {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
       color: #111827;
     }
-    p {
-      font-size: 17px;
-      margin-bottom: 18px;
-    }
+
     .image-box {
-      margin: 24px 0;
-      border-radius: 22px;
-      overflow: hidden;
-      border: 1px solid #e5e7eb;
+      width: 100%;
       background: #f9fafb;
+      border: 2px dashed #d1d5db;
+      border-radius: 20px;
+      overflow: hidden;
+      margin-bottom: 24px;
     }
+
     .image-box img {
       width: 100%;
       display: block;
     }
+
     .caption {
-      padding: 10px 14px;
       text-align: center;
+      padding: 12px;
       font-size: 14px;
       color: #6b7280;
       background: #f9fafb;
     }
-    .highlight {
-      margin: 24px 0;
-      padding: 18px 20px;
-      border-left: 5px solid #f97316;
-      background: #fff7ed;
-      border-radius: 14px;
-      font-size: 18px;
-      font-weight: 700;
-      color: #7c2d12;
-    }
-    .quote {
-      margin: 26px 0;
-      padding: 22px;
-      border-radius: 20px;
-      background: #f3f4f6;
-      font-size: 20px;
-      font-weight: 700;
-      color: #111827;
-      text-align: center;
-    }
-    .info-card {
-      margin-top: 26px;
-      padding: 22px;
-      border-radius: 20px;
+
+    .answer {
       background: #f9fafb;
-      border: 1px solid #e5e7eb;
-    }
-    ul {
-      padding-left: 22px;
-    }
-    li {
-      margin-bottom: 8px;
-      font-size: 17px;
-    }
-    .footer-note {
-      margin-top: 42px;
       padding: 24px;
-      background: #111827;
-      color: #fff;
-      border-radius: 22px;
+      border-radius: 18px;
+      font-size: 18px;
     }
+
     footer {
-      padding: 36px 24px 0;
       text-align: center;
+      padding: 40px 20px;
       color: #6b7280;
       font-size: 14px;
     }
   </style>
 </head>
+
 <body>
-  <div class="page">
-    <header class="hero">
-      <div class="label">학부모님께 드리는 안내</div>
-      <h1>6월1일부터 학원명이<br>애나 에이아이(Anna AI)영어학원으로 변경됩니다</h1>
-      <p class="subtitle">
-        AI 시대에 필요한 영어와 사고력 교육을 더 체계적으로 준비하기 위한 변화입니다.
-      </p>
-    </header>
 
-    <article>
-      <section>
-        <h2>안녕하세요, Anna 원장입니다.</h2>
-        <p>
-          오늘은 학부모님들께 조금 특별한 소식을 전해드리려고 합니다.
-          앞으로 학원은 <strong>애나 에이아이(Anna AI)영어학원</strong>으로 새롭게 운영됩니다.
-        </p>
+<div class="container">
 
-        <div class="image-box">
-          <img src="images/signboard.jpg" alt="간판 사진">
-          <div class="caption">새롭게 변경되는 학원 간판</div>
-        </div>
-      </section>
-
-      <section>
-        <h2>왜 학원명을 변경하게 되었나요?</h2>
-
-        <p>
-          앞으로의 영어교육은 단순히 단어를 외우는 것만으로는 충분하지 않습니다.
-          아이들은 영어로 정보를 읽고, 이해하고, 질문하고, 자신의 생각을 표현할 수 있어야 합니다.
-        </p>
-
-        <div class="highlight">
-          영어는 도구이고, 질문은 사고력입니다.
-        </div>
-
-        <div class="image-box">
-          <img src="images/class-photo.jpg" alt="수업 사진">
-          <div class="caption">영자신문 기반 영어회화 및 질문 수업</div>
-        </div>
-      </section>
-
-      <section>
-        <h2>앞으로의 교육 방향</h2>
-
-        <div class="info-card">
-          <ul>
-            <li>영자신문 기반 영어회화</li>
-            <li>AI 활용 질문 수업</li>
-            <li>영어 발표 및 사고력 훈련</li>
-            <li>6명 이하 소수정예 지도</li>
-          </ul>
-        </div>
-
-        <div class="quote">
-          AI 시대에 필요한 아이는<br>
-          정답만 찾는 아이가 아니라 질문할 수 있는 아이입니다.
-        </div>
-      </section>
-
-      <section>
-        <h2>학부모님께 드리는 말씀</h2>
-
-        <p>
-          앞으로도 아이들이 영어 실력뿐 아니라 AI 시대에 필요한 사고력과 표현력을 함께 기를 수 있도록 최선을 다하겠습니다.
-        </p>
-
-      </section>
-    </article>
-
+  <div class="header">
+    <h1>애나 에이아이 Anna AI 영어학원 안내</h1>
+    <p>
+      학부모님들께 궁금하실 내용을 간단히 안내드립니다.
+    </p>
   </div>
+
+
+  <!-- Q1 -->
+  <div class="section">
+    <div class="question">
+      Q1. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo1.jpg" alt="관련 사진 1">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A1.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q2 -->
+  <div class="section">
+    <div class="question">
+      Q2. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo2.jpg" alt="관련 사진 2">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A2.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q3 -->
+  <div class="section">
+    <div class="question">
+      Q3. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo3.jpg" alt="관련 사진 3">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A3.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q4 -->
+  <div class="section">
+    <div class="question">
+      Q4. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo4.jpg" alt="관련 사진 4">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A4.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q5 -->
+  <div class="section">
+    <div class="question">
+      Q5. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo5.jpg" alt="관련 사진 5">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A5.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q6 -->
+  <div class="section">
+    <div class="question">
+      Q6. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo6.jpg" alt="관련 사진 6">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A6.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q7 -->
+  <div class="section">
+    <div class="question">
+      Q7. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo7.jpg" alt="관련 사진 7">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A7.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q8 -->
+  <div class="section">
+    <div class="question">
+      Q8. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo8.jpg" alt="관련 사진 8">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A8.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q9 -->
+  <div class="section">
+    <div class="question">
+      Q9. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo9.jpg" alt="관련 사진 9">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A9.</strong> 예상 답변
+    </div>
+  </div>
+
+
+  <!-- Q10 -->
+  <div class="section">
+    <div class="question">
+      Q10. 예상 질문
+    </div>
+
+    <div class="image-box">
+      <img src="images/photo10.jpg" alt="관련 사진 10">
+      <div class="caption">관련 사진 첨부</div>
+    </div>
+
+    <div class="answer">
+      <strong>A10.</strong> 예상 답변
+    </div>
+  </div>
+
+</div>
+
 </body>
 </html>
